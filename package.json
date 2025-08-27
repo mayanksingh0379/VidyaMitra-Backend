@@ -11,9 +11,12 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "node-fetch": "^2.7.0"
+    "google-auth-library": "^10.3.0",
+    "node-fetch": "^2.7.0",
+    "react-markdown": "^10.1.0"
   }
 }
