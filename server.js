@@ -32,10 +32,10 @@ async function verifyGoogleToken(req, res, next) {
 }
 
 const app = express();
-const PORT = 8080;
+//const PORT = 8080;
 
 app.use(cors({
-  origin: "https://vidya-mitra-frontend-eta.vercel.app/",
+  origin: "https://vidya-mitra-frontend-eta.vercel.app",
   methods: ["GET", "POST"],
   credentials: true
 }));
