@@ -33,7 +33,11 @@ async function verifyGoogleToken(req, res, next) {
 const app = express();
 const PORT = 8080;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://vidya-mitra-frontend-eta.vercel.app/",
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
