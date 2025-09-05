@@ -34,7 +34,7 @@ const app = express();
 const PORT = 8080;
 
 app.use(cors({
-  origin: "https://your-frontend.vercel.app",
+  origin: "https://vidya-mitra-frontend-eta.vercel.app/",
   methods: ["GET", "POST"],
   credentials: true
 }));
