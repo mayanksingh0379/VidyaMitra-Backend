@@ -5,6 +5,7 @@ const express = require("express");
 const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const { OAuth2Client } = require("google-auth-library");
+const PORT = process.env.PORT || 8080;
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || "654883908647-8s6vjabqqjf8tsn3d90j14lrbklu596q.apps.googleusercontent.com";
 const client = new OAuth2Client(GOOGLE_CLIENT_ID);
@@ -70,5 +71,5 @@ app.post("/api/chat", verifyGoogleToken, async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
